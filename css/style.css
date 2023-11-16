@@ -1,0 +1,75 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+@media all and (max-width: 992px){
+    #main-row {
+      align-items: center;
+      justify-content: center;
+    }
+
+  }
+
+h1 > i{
+    color: darkblue;
+}
+
+h1{
+    border-bottom: 3px solid rgba(59, 80, 148, 0.911);
+}
+
+main{
+    height: 500px;
+    background-color: aqua;
+    /* min-width: 1500px; */
+}
+
+button#btn-add-new{
+    position: relative;
+    left: 100%;
+    font-weight: bold;
+    transform: translateX(-110%);
+    /* margin-top: 8px; */
+    top: 15px;
+}
+
+#cust-detail-container{
+    height: 50px;
+    /* background-color: blueviolet; */
+}
+
+.t-head{
+    /* border: 1px solid black; */
+    height: 100%;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+.t-data{
+    padding-top: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.edit{
+    /* visibility: hidden; */
+    color: blue;
+    font-size: 1.2rem;
+    &:hover{
+        visibility: visible;
+        cursor: pointer;
+    }
+}
+
+.erase{
+    color: red;
+    font-size: 1.2rem;
+
+    &:hover{
+        font-weight: 400;
+        cursor: pointer;
+    }
+}

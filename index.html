@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <h1 class=" text-center">Customer Log <i class="bi bi-people-fill"></i></h1>
+    <main class="container-lg">
+        <div class="row" id="main-row">
+            <div class="col-lg-4 col-12 col-sm-8" id="form-container">
+
+                <div><button id="btn-add-new" type="button" class="btn btn-success">+ NEW</button></div>
+                <!-- Input customer data -->
+                <div class="mb-3">
+                    <label for="cust-id" class="form-label">Customer ID</label>
+                    <input type="text" class="form-control" id="cust-id" aria-describedby="emailHelp"
+                        placeholder="Auto-Generated">
+
+                </div>
+
+                <div class="mb-3">
+                    <label for="cust-name" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" id="cust-name" aria-describedby="emailHelp"
+                        placeholder="eg. Kasun Sampath">
+                    <div id="name-hint" class="form-text">name hint</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="cust-address" class="form-label">Customer Address</label>
+                    <input type="text" class="form-control" id="cust-address" aria-describedby="emailHelp"
+                        placeholder="eg. 266A, Panadura.">
+                    <div id="address-hint" class="form-text">address hint</div>
+                </div>
+
+                <button id="btn-add" type="button" class="btn btn-primary ms-1">Submit</button>
+                <button id="btn-clear" type="button" class="btn btn-secondary ms-2">Clear</button>
+
+            </div>
+
+            <!-- Table to display customer data -->
+
+            <div class="col-lg-8 col-12  ">
+                <!-- Search bar -->
+                <div class="input-group input-group-sm mt-3 mb-3">
+                    <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm" placeholder="Search Customer">
+                </div>
+                <!-- Customer table -->
+                <div  class="container-fluid p3">
+                    <div class="row mb-1">
+                        <div class="t-head col-1">
+                            ID
+                        </div>
+                        <div class="t-head  col-5">
+                            NAME
+                        </div>
+                        <div class="t-head  col-4">
+                            ADDRESS
+                        </div>
+                        <div class="t-head  col-2">
+                            E/D
+                        </div>
+                    </div>
+                    <!-- Data set - 1 -->
+                    <div id="cust-detail-container">
+                        <div class="row ">
+                            <div class="t-data col-1">
+                                ID
+                            </div>
+                            <div class="t-data  col-5">
+                                NAME
+                            </div>
+                            <div class="t-data  col-4">
+                                ADDRESS
+                            </div>
+                            <div class="t-data  col-2">
+                                <i class="bi bi-pencil-fill edit mx-2"></i>
+                                <i class="bi bi-x-circle-fill erase mx-2"></i>
+                            </div>
+                        </div>
+                        <!-- Data set - 2 -->
+                        <div class="row ">
+                            <div class="t-data col-1">
+                                ID
+                            </div>
+                            <div class="t-data  col-5">
+                                NAME
+                            </div>
+                            <div class="t-data  col-4">
+                                ADDRESS
+                            </div>
+                            <div class="t-data  col-2">
+                                <i class="bi bi-pencil-fill edit mx-2"></i>
+                                <i class="bi bi-x-circle-fill erase mx-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
