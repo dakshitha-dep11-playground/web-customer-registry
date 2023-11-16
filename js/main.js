@@ -35,5 +35,54 @@ class Customer {
         return custDivElm2;
     }
 }
+let custIDNumber = 1;
 
-new Customer(1, 'sjgcs', 'sjcs')
+function generateID(){
+    if(custIDNumber<10){
+        return `C00${custIDNumber}`;
+    }
+    if(custIDNumber<100){
+        return `C0${custIDNumber}`;
+    }else{
+        return `C${custIDNumber}`;
+    }
+
+}
+
+/* Input elements */
+const btnAddNew = document.querySelector('#btn-add-new');
+const idInputElm = document.querySelector('#cust-id');
+const nameInputElm = document.querySelector('#cust-name');
+const addressInputElm = document.querySelector('#cust-address');
+
+/* Add new customer button */
+btnAddNew.addEventListener('click', (e)=>{
+    idInputElm.value = generateID(); 
+    console.log("clicked new +");
+})
+
+/* Add button and validations */
+const btnAdd = document.querySelector('#btn-add');
+btnAdd.addEventListener('click',(e)=>{
+    let id = idInputElm.value.trim(); 
+    let name = nameInputElm.value.trim();
+    let address = addressInputElm.value.trim();
+    if(!name||!address){
+            console.log("Null ane");
+            if(!name){
+                nameInputElm.style.border = `4px solid red`;
+                const nameHintELm = document.querySelector('#name-hint');
+                nameHintELm.innerText ='Enter your name';
+                nameHintELm.style.color = `red`;
+            }
+            if(!address){
+                addressInputElm.style.border = `4px solid red`;
+                const addressHintELm = document.querySelector('#address-hint');
+                addressHintELm.innerText ='Enter your address';
+                addressHintELm.style.color = `red`;
+            }
+            return;
+    }
+
+
+})

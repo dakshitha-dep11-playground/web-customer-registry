@@ -25,6 +25,10 @@ main{
     /* min-width: 1500px; */
 }
 
+#form-container{
+    
+}
+
 button#btn-add-new{
     position: relative;
     left: 100%;
