@@ -21,7 +21,7 @@ h1{
 
 main{
     height: 500px;
-    background-color: aqua;
+    /* background-color: aqua; */
     /* min-width: 1500px; */
 }
 
@@ -39,8 +39,16 @@ button#btn-add-new{
 }
 
 #cust-detail-container{
-    height: 50px;
+    height: 500px;
+    width: 101%;
+    overflow-y: scroll;
+    overflow-x: hidden;
     /* background-color: blueviolet; */
+}
+
+.cust-data-table{
+    border: 1px solid black;
+    /* padding: 1px; */
 }
 
 .t-head{
@@ -48,8 +56,10 @@ button#btn-add-new{
     height: 100%;
     padding: 5px;
     border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    /* border-top: 1px solid black; */
     text-align: center;
+
+
 }
 
 .t-data{
@@ -61,7 +71,7 @@ button#btn-add-new{
 .edit{
     /* visibility: hidden; */
     color: blue;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     &:hover{
         visibility: visible;
         cursor: pointer;
@@ -70,10 +80,23 @@ button#btn-add-new{
 
 .erase{
     color: red;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 
     &:hover{
         font-weight: 400;
         cursor: pointer;
     }
 }
+
+.customer-row{
+    background-color: rgb(210, 199, 241);
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+.customer-row:hover{
+    background-color: gray;
+}
+
+
+

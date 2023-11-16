@@ -39,14 +39,14 @@
                     <label for="cust-name" class="form-label">Customer Name</label>
                     <input type="text" class="form-control" id="cust-name" aria-describedby="emailHelp"
                         placeholder="eg. Kasun Sampath">
-                    <div id="name-hint" class="form-text">name hint</div>
+                    <div id="name-hint" class="form-text"></div>
                 </div>
 
                 <div class="mb-3">
                     <label for="cust-address" class="form-label">Customer Address</label>
                     <input type="text" class="form-control" id="cust-address" aria-describedby="emailHelp"
                         placeholder="eg. 266A, Panadura.">
-                    <div id="address-hint" class="form-text">address hint</div>
+                    <div id="address-hint" class="form-text"></div>
                 </div>
 
                 <button id="btn-add" type="button" class="btn btn-primary ms-1">Submit</button>
@@ -59,11 +59,11 @@
             <div class="col-lg-8 col-12  ">
                 <!-- Search bar -->
                 <div class="input-group input-group-sm mt-3 mb-3">
-                    <input type="text" class="form-control" aria-label="Sizing example input"
+                    <input type="text" class="form-control search" aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-sm" placeholder="Search Customer">
                 </div>
                 <!-- Customer table -->
-                <div  class="container-fluid p3">
+                <div class="cust-data-table container-fluid p3">
                     <div class="row mb-1">
                         <div class="t-head col-1">
                             ID
@@ -80,6 +80,22 @@
                     </div>
                     <!-- Data set - 1 -->
                     <div id="cust-detail-container">
+                        <!-- <div class="row customer-row">
+                            <div class="t-data col-1 customer-row-id">
+                                ID
+                            </div>
+                            <div class="t-data  col-5 customer-row-name">
+                                NAME
+                            </div>
+                            <div class="t-data  col-4 customer-row-address">
+                                ADDRESS
+                            </div>
+                            <div class="t-data  col-2">
+                                <i class="bi bi-pencil-fill edit mx-2"></i>
+                                <i class="bi bi-x-circle-fill erase mx-2"></i>
+                            </div>
+                        </div>
+                        Data set - 2
                         <div class="row ">
                             <div class="t-data col-1">
                                 ID
@@ -94,23 +110,7 @@
                                 <i class="bi bi-pencil-fill edit mx-2"></i>
                                 <i class="bi bi-x-circle-fill erase mx-2"></i>
                             </div>
-                        </div>
-                        <!-- Data set - 2 -->
-                        <div class="row ">
-                            <div class="t-data col-1">
-                                ID
-                            </div>
-                            <div class="t-data  col-5">
-                                NAME
-                            </div>
-                            <div class="t-data  col-4">
-                                ADDRESS
-                            </div>
-                            <div class="t-data  col-2">
-                                <i class="bi bi-pencil-fill edit mx-2"></i>
-                                <i class="bi bi-x-circle-fill erase mx-2"></i>
-                            </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
